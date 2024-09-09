@@ -1,0 +1,21 @@
+{
+  "author": {
+    "name": "Mate Viko Monastra",
+    "email": "mateovikomonastravm@gmail.com",
+    "url": "https://github.com/MateoMonastra"
+  },
+  "dependencies": {},
+  "description": "This is a fsm made with the purpose that the states are not monobehaviours and they do not handle the transitions and the Agents do it.",
+  "displayName": "Fsm_Mk2",
+  "documentationUrl": "https://github.com/MateoMonastra/Fsm_Mk2",
+  "keywords": [
+    "Fsm",
+    "Fsm_Mk2",
+    "Mk2"
+  ],
+  "licensesUrl": "https://github.com/MateoMonastra/Fsm_Mk2",
+  "name": "com.VikoProductions.Fsm_Mk2",
+  "unity": "2022.3.41",
+  "unityRelease": "0b5",
+  "version": "0.1"
+}
