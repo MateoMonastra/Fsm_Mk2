@@ -1,17 +1,13 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Fsm_Mk2
 {
     public class Fsm
     {
-        private List<State> _states;
-
         private State _current;
 
-        public Fsm(List<State> states, State current)
+        public Fsm(State current)
         {
-            _states = states;
             _current = current;
         }
 
