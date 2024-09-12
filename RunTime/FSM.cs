@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+namespace Fsm_Mk2
+{
     public class Fsm
     {
         private List<State> _states;
@@ -27,7 +29,7 @@ using UnityEngine;
         {
             if (transition == null) return;
             if (!_current.TryGetTransition(transition)) return;
-            
+
             transition.From.Exit();
             transition.To.Enter();
             _current = transition.To;
@@ -38,3 +40,4 @@ using UnityEngine;
             return _current;
         }
     }
+}

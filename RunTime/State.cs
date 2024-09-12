@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 
+namespace Fsm_Mk2
+{
     public abstract class State
     {
         public List<Transition> transitions = new();
@@ -30,3 +32,4 @@ using System.Collections.Generic;
             return false;
         }
     }
+}
