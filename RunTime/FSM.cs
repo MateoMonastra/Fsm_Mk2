@@ -9,6 +9,7 @@ namespace Fsm_Mk2
         public Fsm(State current)
         {
             _current = current;
+            _current.Enter();
         }
 
         public void Update()
