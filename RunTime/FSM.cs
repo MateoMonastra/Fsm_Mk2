@@ -27,8 +27,7 @@ namespace Fsm_Mk2
             if (transition == null) return;
             if (!_current.TryGetTransition(transition)) return;
 
-            transition.From.Exit();
-            transition.To.Enter();
+            transition.Do();
             _current = transition.To;
         }
 
