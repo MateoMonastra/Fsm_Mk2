@@ -1,5 +1,4 @@
 using UnityEngine;
-using System;
 
 namespace Fsm_Mk2
 {
@@ -33,16 +32,6 @@ namespace Fsm_Mk2
             }
 
             return false;
-        }
-
-        [Obsolete("warning use Fsm.TryTransitionTo instead.")]
-        public void ApplyTransition(Transition transition)
-        {
-            if (transition == null) return;
-            if (!_current.TryGetTransition(transition)) return;
-
-            transition.Do();
-            _current = transition.To;
         }
 
         public State GetCurrentState()
