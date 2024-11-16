@@ -30,6 +30,7 @@ namespace Fsm_Mk2
                 }
             }
 
+            transition = null;
             return false;
         }
     }
