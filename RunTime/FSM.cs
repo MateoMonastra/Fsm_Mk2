@@ -22,6 +22,19 @@ namespace Fsm_Mk2
             _current.FixedTick(Time.deltaTime);
         }
 
+        public bool TryTransitionTo(string id)
+        {
+            if (_current.TryGetTransition(id, out var transition))
+            {
+                transition.Do();
+                _current = transition.To;
+                return true;
+            }
+
+            return false;
+        }
+
+        [Obsolete("warning use Fsm.TryTransitionTo instead.")]
         public void ApplyTransition(Transition transition)
         {
             if (transition == null) return;

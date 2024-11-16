@@ -19,12 +19,13 @@ namespace Fsm_Mk2
 
         public virtual void Exit() => OnExit?.Invoke();
 
-        public bool TryGetTransition(Transition transition)
+        public bool TryGetTransition(string id, out Transition transition)
         {
             foreach (var transitionCandidate in transitions)
             {
-                if (transitionCandidate == transition)
+                if (transitionCandidate.id == id)
                 {
+                    transition = transitionCandidate;
                     return true;
                 }
             }
